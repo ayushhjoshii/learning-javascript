@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Helvetica;
+            box-sizing: border-box;
+        }
+        html, body{
+            width: 100%;
+            height: 100%;
+        }
+        #main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background-color: #999;
+        }
+        h1{
+            color: #555;
+            font-size: 10rem;
+            font-weight: 600;
+            letter-spacing: -1rem;
+            user-select: none;
+        }
+        #main1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+        }
+        #inpBtn{
+            display: none;
+        }
+        #btn{
+            padding: 12px 22px;
+            color: rgb(41, 143,114);
+            font-weight: 600;
+            background-color: white;
+            border-radius: 5px;
+        }
+        #btn:hover{
+            background-color: rgb(41, 143,114);
+            color: white;
+        }
+        input{
+            display: block;
+        }
+        #main2{
+            padding: 30px;
+            width: 100%;
+            height: 100%;
+            background-color:grey;
+        }
+        .card{
+            width: 300px;
+            /* color: white; */
+            margin-top: 40px;
+            border-radius: 10px;
+            display: inline-block;
+            padding: 20px;
+            border: 2px solid #e3e3e3;
+            background-color: rgb(184, 184, 110);
+        }
+        .profile{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 50%;
+            margin-bottom: 7px;
+            overflow: hidden;
+        }
+        .profile img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card h5{
+            margin-top: 3px;
+        }
+        .card p{
+            font-size: 12px;
+            margin-top: 10px;
+        }
+        .card:hover{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>a</h1>
+    </div>
+
+    <div id="main1">
+        <input id="inpBtn" type="file">
+        <div id="btn">
+            Upload file
+        </div>
+    </div>
+
+    <div id="main2">
+        <form action="">
+            <input id="ip" type="text" placeholder="profile pic">
+            <input id="ip" type="text" placeholder="name">
+            <input id="ip" type="text" placeholder="occupation">
+            <input id="ip" type="text" placeholder="info">
+            <input id="ip" type="submit">
+        </form>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+       Minus soluta amet nulla quasi fugiat, esse obcaecati hic<br>
+       quod veniam quae qui iure voluptatibus nihil deleniti ea<br>
+       eligendi velit consequuntur expedita neque minima?
+    </p>
+    <input type="text" placeholder="name">
+    <h3 id="device">Select your phone:</h3>
+    <select>
+        <option selected disabled>Choose your device</option>
+        <option value="samsung">Samsung</option>
+        <option value="mi">Xiaomi</option>
+        <option value="apple">iPhone</option>
+        <option value="moto">Motorola</option>
+    </select>
+    <script src="script.js"></script>
+</body>
+</html>

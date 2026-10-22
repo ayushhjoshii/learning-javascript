@@ -30,4 +30,24 @@ document.querySelector("ul").addEventListener("click", function(val){
  * - first the phase 1 occurs always but by default it is off
  *   but if we switch it on the we'll get answers from phase1
  *   first.
+ * - The capture phase can be turned on by writing "true", after
+ *   the function definition in the eventListener.
+ * - Therefore, event capturing is exact opposite of event bubbling.
  */
+let a = document.querySelector(".a");
+let b = document.querySelector(".b");
+let c = document.querySelector(".c");
+let btn = document.querySelector("#show");
+
+btn.addEventListener("click", function(){
+    console.log("button clicked");
+}, true);
+c.addEventListener("click", function(){
+    console.log("c clicked");
+}, true);
+b.addEventListener("click", function(){
+    console.log("b clicked");
+}, true);
+a.addEventListener("click", function(){
+    console.log("a clicked");
+}, true);

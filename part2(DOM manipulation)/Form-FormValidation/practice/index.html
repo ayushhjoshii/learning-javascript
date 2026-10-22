@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <form autocomplete="off" id="loginForm" class="login-form">
+            <h2>Email/password validator</h2>
+            <p class="subtitle">We'll tell you whether the email/password you entered is a valid one or not.</p>
+            
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com" >
+                <small class="error" id="emailError"></small>
+            </div>
+            
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="••••••••" >
+                <small class="error" id="passwordError"></small>
+            </div>
+            
+            <button type="submit" id="submitBtn" class="submit-btn">Sign In</button>
+        </form>
+        <div id="resultMessage"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

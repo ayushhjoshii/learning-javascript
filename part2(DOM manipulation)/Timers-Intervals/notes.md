@@ -1,0 +1,2 @@
+- from here Asynchronous javascript is starting.
+- if we want to do something at some time not instantly, then we use this

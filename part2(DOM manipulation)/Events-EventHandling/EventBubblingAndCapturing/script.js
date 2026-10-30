@@ -24,7 +24,7 @@ document.querySelector("ul").addEventListener("click", function(val){
 // 2. Event Capturing
 /**
  * - Whenever we raise an event, the flow of event occurs
- * in two phases:
+ *   in two phases:
  * - phase1: event moves from top level to the bottom
  * - phase2: event moves from the raised element to the parent.
  * - first the phase 1 occurs always but by default it is off

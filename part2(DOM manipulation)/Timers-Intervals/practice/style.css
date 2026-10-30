@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d0d11;
+}
+
+/* Glass Card */
+.glass-card {
+  width: 320px;
+  padding: 28px 24px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #ffffff;
+}
+
+.glass-card h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+/* Outer track for the progress bar */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+/* Inner filling progress bar */
+.progress-bar {
+  width: 0%; /* Dynamic fill to update via JS */
+  height: 100%;
+  background: #ffffff;
+  border-radius: 10px;
+  transition: width 0.1s linear;
+}
+
+/* Percentage text */
+.percent {
+  font-size: 0.85rem;
+  color: #a0a0a0;
+  font-weight: 500;
+}

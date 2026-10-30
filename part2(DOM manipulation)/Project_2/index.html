@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Call Reminder</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Remixicon for phone icon -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Form Container (Hidden/Shown via JS) -->
+  <div class="form-container">
+    <h2>New Call</h2>
+    <form id="call-form">
+      <div class="input-group">
+        <label for="img-url">Image URL</label>
+        <input type="text" id="img-url" placeholder="https://example.com/photo.jpg" />
+      </div>
+
+      <div class="input-group">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" placeholder="Enter full name" />
+      </div>
+
+      <div class="input-group">
+        <label for="home-town">Home Town</label>
+        <input type="text" id="home-town" placeholder="Enter home town" />
+      </div>
+
+      <div class="input-group">
+        <label for="purpose">Purpose</label>
+        <input type="text" id="purpose" placeholder="e.g., Quick appointment note" />
+      </div>
+
+      <div class="input-group">
+        <label>Category</label>
+        <div class="categories">
+          <label class="category-btn emergency">
+            <input type="radio" name="category" value="emergency" />
+            <span>Emergency</span>
+          </label>
+          <label class="category-btn important">
+            <input type="radio" name="category" value="important" />
+            <span>Important</span>
+          </label>
+          <label class="category-btn urgent">
+            <input type="radio" name="category" value="urgent" />
+            <span>Urgent</span>
+          </label>
+          <label class="category-btn no-rush">
+            <input type="radio" name="category" value="no-rush" />
+            <span>No Rush</span>
+          </label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-create">Create Note</button>
+      <button type="button" class="btn-close">Close</button>
+    </form>
+  </div>
+
+  <!-- Note View Container -->
+  <div class="note-container">
+    
+    <!-- Left Nav Icons -->
+    <div class="left-icons">
+      <button class="icon-btn add-btn"><i class="ri-add-line"></i></button>
+      <button class="icon-btn up-btn"><i class="ri-arrow-up-line"></i></button>
+      <button class="icon-btn down-btn"><i class="ri-arrow-down-line"></i></button>
+    </div>
+
+    <!-- Stack Card -->
+    <div class="stack">
+      <div class="card">
+        <div class="card-avatar">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150" alt="Avatar" />
+        </div>
+        
+        <h3 class="card-name">Fatima Uma</h3>
+        
+        <div class="card-details">
+          <div class="detail-row">
+            <span class="label">Home town</span>
+            <span class="value">Singapore</span>
+          </div>
+          <div class="detail-row">
+            <span class="label">Bookings</span>
+            <span class="value">3 times</span>
+          </div>
+        </div>
+
+        <div class="card-actions">
+          <button class="action-btn call-btn">
+            <i class="ri-phone-fill"></i> Call
+          </button>
+          <button class="action-btn message-btn">Message</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Priority Colors -->
+    <div class="right-colors">
+      <span class="color-dot black"></span>
+      <span class="color-dot purple"></span>
+      <span class="color-dot brown"></span>
+      <span class="color-dot teal"></span>
+    </div>
+
+  </div>
+
+</body>
+</html>

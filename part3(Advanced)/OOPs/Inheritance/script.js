@@ -24,3 +24,10 @@ let arabiataCoffee = Object.create(coffee);
 console.log(arabiataCoffee);
 arabiataCoffee.taste = "bitter";
 arabiataCoffee.drink();
+/**
+ * - Instead of cloning an object using the spread Operator
+ *   ({...coffee}) which creates a shallow copy with duplicate
+ *   properties, we use Object.create() to establish a prototype
+ *   link, allowing objects to delegate and share properties/
+ *   methods throught he prototype chain.
+ */
